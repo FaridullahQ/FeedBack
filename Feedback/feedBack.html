@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedBack</title>
+    <style>
+        *body
+        {
+            margin: 0;
+            
+        }
+        .genContainer
+        {
+            width: 700px;
+            height: 300px;
+            background-color: aquamarine;
+            border: 2px;
+            border-radius: 20px; 
+            box-shadow: 0 5px 10px rgba(50,150, 100, .5);
+            text-align: center;
+            position: relative;
+            top: 300px;
+            left: 320px;
+          
+        }
+        .header 
+        {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .emojisContainer
+        {
+            display: flex;
+            padding: 20px;
+            margin: 30px;
+            position: relative;
+            left: 80px;
+            top: -40px;
+
+        }
+        .rating
+        {
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        
+        
+        #btn
+        {
+            background-color: rgb(99, 154, 216); 
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            top: 130px;
+            left: 60px;
+            border: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #btn:hover
+        {
+            background-color: chartreuse;
+            cursor: pointer;
+            box-shadow: 2px;
+            border: 2px;
+            border-radius: 10%;
+            transition: all 700ms ease;
+        }
+
+        .rating:hover,
+        .rating.active
+        {
+            background-color: chartreuse;
+            cursor: pointer;
+            box-shadow: 2px;
+            border: 2px;
+            border-radius: 30%;
+            transition: all 700ms ease;
+        }
+        .sendBtn 
+        {
+            position:absolute;
+            top: 60px;
+            left: 120px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="genContainer">
+        <div class="header">
+            <h1>FeedBack Emojis UI</h1>
+        </div>
+        <div class="emojisContainer">
+            <div class="rating ">
+                <img src="unhappy.png" alt="unhappy"> </br>
+                <small>Unhappy</small>
+            </div>
+            <div class="rating ">
+                <img src="neuteral.png" alt="neuteral"> </br>   
+                <small>Neuteral</small>
+            </div>
+            <div class="rating ">
+                <img src="satisfied.png" alt="satisfied"> </br>
+                <small>Satisfied</small> </br>
+
+            </div>
+        </br>
+            <div class="sendBtn">
+                <button id="btn">Send FeedBack</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
